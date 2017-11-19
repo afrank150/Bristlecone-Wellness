@@ -23,7 +23,7 @@ const styles = theme => ({
   },
   content: {
     display: 'table-cell',
-    verticalAlign: 'bottom',
+    verticalAlign: 'middle',
     textAlign: 'center',
     color: theme.palette.secondary[50],
   },
@@ -34,7 +34,7 @@ function Splash(props) {
 
   return (
     <div className={classes.root} style={{ backgroundImage: `url(${BristleconePine})` }}>
-      <Typography type="display4" className={classes.content}>Test</Typography>
+      <Typography type="display4" className={classes.content}>TBD</Typography>
     </div>
   );
 }
