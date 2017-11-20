@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import AppBar from 'material-ui/AppBar';
@@ -9,7 +9,13 @@ import NavButtons from './NavButtons';
 import NavMenu from './NavMenu';
 
 const styles = {
-  bar: {
+  fixed: {
+    height: 44,
+    padding: 0,
+    position: 'fixed',
+    top: 0,
+  },
+  notFixed: {
     height: 44,
     padding: 0,
   },
@@ -19,20 +25,46 @@ const styles = {
   },
 };
 
-function NavBar(props) {
-  const { classes } = props;
-  return (
-    <AppBar className={classes.bar} position="static" color="primary">
-      <Toolbar classes={{ gutters: props.classes.gutters }}>
-        <NavButtons />
-        <NavMenu />
-      </Toolbar>
-    </AppBar>
-  );
+class NavBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { fixed: false };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    this.setState(window.scrollY > 115 ? { fixed: true } : { fixed: false });
+  }
+
+  render() {
+    const { classes } = this.props;
+    const bar = this.state.fixed ? classes.fixed : classes.notFixed;
+
+    return (
+      <AppBar
+        className={bar}
+        position="static"
+        color="primary"
+      >
+        <Toolbar classes={{ gutters: this.props.classes.gutters }}>
+          <NavButtons />
+          <NavMenu />
+        </Toolbar>
+      </AppBar>
+    );
+  }
 }
 
 NavBar.propTypes = {
   classes: PropTypes.object.isRequired,
+};
+
+NavBar.defaultProps = {
+  fixed: false,
 };
 
 export default compose(withStyles(styles), withWidth())(NavBar);

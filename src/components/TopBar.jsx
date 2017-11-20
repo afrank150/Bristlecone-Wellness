@@ -84,7 +84,7 @@ function TopBar(props) {
           <Grid container spacing={0} alignItems="center" wrap="nowrap" className={classes.rightItems}>
             {/* appointment button */}
             <Grid item xs={6} className={classes.appointment}>
-              <Button dense className={classes.apptButton}>
+              <Button dense className={classes.apptButton} href="https://acusimple.com/">
                 Make an Appointment
               </Button>
             </Grid>

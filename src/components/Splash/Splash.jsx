@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
-import BristleconePine from './bristlecone.jpg';
+import BristleconePine from './forest.JPG';
 
 
 const styles = theme => ({
@@ -17,7 +17,7 @@ const styles = theme => ({
     padding: '0',
     background: {
       repeat: 'no-repeat',
-      position: 'bottom center',
+      position: 'center bottom',
       size: 'cover',
     },
   },
@@ -25,7 +25,9 @@ const styles = theme => ({
     display: 'table-cell',
     verticalAlign: 'middle',
     textAlign: 'center',
-    color: theme.palette.secondary[50],
+    color: 'white',
+    textTransform: 'uppercase',
+    fontSize: '50px',
   },
 });
 
@@ -34,7 +36,11 @@ function Splash(props) {
 
   return (
     <div className={classes.root} style={{ backgroundImage: `url(${BristleconePine})` }}>
-      <Typography type="display4" className={classes.content}>TBD</Typography>
+      <Typography type="headline" className={classes.content}>
+        Be Strong,<br />
+        Be Resilient,<br />
+        Be Well
+      </Typography>
     </div>
   );
 }
