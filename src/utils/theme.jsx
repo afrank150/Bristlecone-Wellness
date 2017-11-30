@@ -40,17 +40,15 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: '"Open Sans", sans-serif',
-    display1: {
-      fontFamily: '"Julius Sans One", sans-serif',
-    },
-    display2: {
-      fontFamily: '"Julius Sans One", sans-serif',
-    },
     display3: {
       fontFamily: '"Julius Sans One", sans-serif',
+      fontWeight: 'bold',
+      fontSize: '48px',
     },
     display4: {
       fontFamily: '"Julius Sans One", sans-serif',
+      fontWeight: 'bold',
+      fontSize: '72px',
     },
     headline: {
       fontFamily: '"Julius Sans One", sans-serif',

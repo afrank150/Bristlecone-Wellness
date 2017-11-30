@@ -19,25 +19,25 @@ function NavButtons(props) {
   const { classes } = props;
   return (
     <Hidden xsDown>
-      <Button color="contrast" className={classes.button}>
+      <Button color="contrast" className={classes.button} href="/">
         home
       </Button>
-      <Button color="contrast" className={classes.button}>
+      <Button color="contrast" className={classes.button} href="/about/">
         about
       </Button>
-      <Button color="contrast" className={classes.button}>
+      <Button color="contrast" className={classes.button} href="/services/">
         services
       </Button>
-      <Button color="contrast" className={classes.button}>
+      <Button color="contrast" className={classes.button} href="/testimonials/">
         testimonials
       </Button>
-      <Button color="contrast" className={classes.button}>
+      <Button color="contrast" className={classes.button} href="/resources/">
         resources
       </Button>
-      <Button color="contrast" className={classes.button}>
+      <Button color="contrast" className={classes.button} href="/location/">
         location
       </Button>
-      <Button color="contrast" className={classes.button}>
+      <Button color="contrast" className={classes.button} href="/contact/">
         contact
       </Button>
     </Hidden>

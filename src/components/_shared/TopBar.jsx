@@ -65,9 +65,18 @@ function TopBar(props) {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={8} alignItems="center" className={classes.topSection}>
-        {/* logo */}
-        <Grid item lg={8} md={7} xs={12}>
+      <Grid
+        container
+        spacing={8}
+        alignItems="center"
+        className={classes.topSection}
+      >
+        <Grid /* Logo tem */
+          item
+          lg={8}
+          md={7}
+          xs={12}
+        >
           <Hidden xsDown>
             <Typography type="headline" className={classes.logo}>
               Bristlecone Wellness, LLC
@@ -79,21 +88,49 @@ function TopBar(props) {
             </Typography>
           </Hidden>
         </Grid>
-        {/* right items */}
-        <Grid item lg={4} md={5} xs={12}>
-          <Grid container spacing={0} alignItems="center" wrap="nowrap" className={classes.rightItems}>
-            {/* appointment button */}
-            <Grid item xs={6} className={classes.appointment}>
-              <Button dense className={classes.apptButton} href="https://acusimple.com/">
+        <Grid /* Right items */
+          item
+          lg={4}
+          md={5}
+          xs={12}
+        >
+          <Grid
+            container
+            spacing={0}
+            alignItems="center"
+            wrap="nowrap"
+            className={classes.rightItems}
+          >
+            <Grid /* Apointment button item */
+              item
+              xs={6}
+              className={classes.appointment}
+            >
+              <Button
+                dense
+                className={classes.apptButton}
+                href="https://acusimple.com/"
+              >
                 Make an Appointment
               </Button>
             </Grid>
-            {/* phone and address */}
-            <Grid item xs={6} className={classes.contact}>
-              <Grid container spacing={0} alignItems="center">
-                {/* phone */}
-                <Grid item xs={12}>
-                  <Grid container spacing={0} alignItems="center" wrap="nowrap">
+            <Grid /* phone and address */
+              item
+              xs={6}
+              className={classes.contact}
+            >
+              <Grid
+                container
+                spacing={0}
+                alignItems="center"
+              >
+                <Grid item xs={12} /* phone */>
+                  <Grid
+                    container
+                    spacing={0}
+                    alignItems="center"
+                    wrap="nowrap"
+                  >
                     <Grid item>
                       <PhoneIcon className={classes.icon} />
                     </Grid>
@@ -104,9 +141,13 @@ function TopBar(props) {
                     </Grid>
                   </Grid>
                 </Grid>
-                {/* address */}
-                <Grid item xs={12}>
-                  <Grid container spacing={0} alignItems="center" wrap="nowrap">
+                <Grid item xs={12} /* address */>
+                  <Grid
+                    container
+                    spacing={0}
+                    alignItems="center"
+                    wrap="nowrap"
+                  >
                     <Grid item>
                       <LocationOnIcon className={classes.icon} />
                     </Grid>

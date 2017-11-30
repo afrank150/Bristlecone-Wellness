@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
-import BristleconePine from './forest.JPG';
+import Hidden from 'material-ui/Hidden';
+import BristleconePine from './IMG_0447.jpg';
 
 
 const styles = theme => ({
@@ -14,10 +15,14 @@ const styles = theme => ({
       width: '100% !important', // Overrides inline-style
       height: 400,
     },
+    [theme.breakpoints.down('sm')]: {
+      width: '100% !important', // Overrides inline-style
+      height: 325,
+    },
     padding: '0',
     background: {
       repeat: 'no-repeat',
-      position: 'center bottom',
+      position: 'center center',
       size: 'cover',
     },
   },
@@ -27,7 +32,6 @@ const styles = theme => ({
     textAlign: 'center',
     color: 'white',
     textTransform: 'uppercase',
-    fontSize: '50px',
   },
 });
 
@@ -36,11 +40,20 @@ function Splash(props) {
 
   return (
     <div className={classes.root} style={{ backgroundImage: `url(${BristleconePine})` }}>
-      <Typography type="headline" className={classes.content}>
-        Be Strong,<br />
-        Be Resilient,<br />
-        Be Well
-      </Typography>
+      <Hidden xsDown>
+        <Typography type="display4" className={classes.content}>
+          Be Strong<br />
+          Be Resilient<br />
+          Be Well
+        </Typography>
+      </Hidden>
+      <Hidden smUp>
+        <Typography type="display3" className={classes.content}>
+          Be Strong<br />
+          Be Resilient<br />
+          Be Well
+        </Typography>
+      </Hidden>
     </div>
   );
 }

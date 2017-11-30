@@ -14,6 +14,7 @@ const styles = {
     padding: 0,
     position: 'fixed',
     top: 0,
+    zIndex: 999,
   },
   notFixed: {
     height: 44,
@@ -37,7 +38,7 @@ class NavBar extends Component {
   }
 
   handleScroll() {
-    this.setState(window.scrollY > 115 ? { fixed: true } : { fixed: false });
+    this.setState(window.scrollY > 110 ? { fixed: true } : { fixed: false });
   }
 
   render() {

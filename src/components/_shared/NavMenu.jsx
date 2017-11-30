@@ -7,16 +7,20 @@ import { withStyles } from 'material-ui/styles';
 import Hidden from 'material-ui/Hidden';
 
 const options = [
-  'Contrast',
-  'Contrast2',
-  'Contrast3',
+  'Home',
+  'About',
+  'Services',
+  'Testimonials',
+  'Resources',
+  'Location',
+  'Contact',
 ];
 
 const ITEM_HEIGHT = 48;
 
 const styles = theme => ({
   button: {
-    marginLeft: theme.spacing.unit * 3,
+    marginLeft: theme.spacing.unit,
     color: theme.palette.secondary.A100,
   },
   icon: {
@@ -68,7 +72,7 @@ class NavMenu extends React.Component {
             }}
           >
             {options.map(option => (
-              <MenuItem key={option} onClick={this.handleRequestClose}>
+              <MenuItem key={option} href={option} onClick={this.handleRequestClose}>
                 {option}
               </MenuItem>
             ))}
