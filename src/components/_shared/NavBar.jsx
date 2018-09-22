@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import compose from 'recompose/compose';
 import NavButtons from './NavButtons';
 import NavMenu from './NavMenu';
@@ -29,6 +30,7 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = { fixed: false };
+    this.getFixHeight = this.getFixHeight.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -36,8 +38,13 @@ class NavBar extends Component {
     window.addEventListener('scroll', this.handleScroll);
   }
 
+  getFixHeight() {
+    const { width } = this.props;
+    return ((isWidthUp('md', width) ? 247 : 187));
+  }
+
   handleScroll() {
-    this.setState(window.scrollY > 119 ? { fixed: true } : { fixed: false });
+    this.setState(window.scrollY > this.getFixHeight() ? { fixed: true } : { fixed: false });
   }
 
   render() {
@@ -61,6 +68,10 @@ class NavBar extends Component {
 
 NavBar.propTypes = {
   classes: PropTypes.object.isRequired,
+  width: PropTypes.string.isRequired,
 };
 
-export default compose(withStyles(styles))(NavBar);
+export default compose(
+  withStyles(styles, { name: 'NavBar' }),
+  withWidth(),
+)(NavBar);

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
-import BristleconePine from './massage.jpg';
+import BristleconePine from './IMG_0792.JPG';
 
 
 const styles = theme => ({
@@ -15,6 +15,7 @@ const styles = theme => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
+    // backgroundImage: 'linear-gradient(#c0dece, transparent) !important',
     [theme.breakpoints.down('md')]: {
       width: '100% !important', // Overrides inline-style
       height: 400,
