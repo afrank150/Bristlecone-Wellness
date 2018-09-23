@@ -14,10 +14,14 @@ const styles = theme => ({
     height: 28,
     margin: 0,
   },
+  container: {
+    height: 28,
+  },
   icon: {
     color: theme.palette.grey[600],
     height: '12px',
     width: '12px',
+    verticalAlign: 'baseline',
   },
   iconText: {
     whiteSpace: 'nowrap',
@@ -28,11 +32,11 @@ function Banner(props) {
   const { classes } = props;
 
   return (
-    <Grid container>
+    <Grid container className={classes.root}>
       <Grid item xs={3} sm={6}>
         <Grid
           container
-          className={classes.root}
+          className={classes.container}
           alignItems="center"
           justify="center"
           wrap="nowrap"
@@ -50,7 +54,7 @@ function Banner(props) {
       <Grid item xs={9} sm={6}>
         <Grid
           container
-          className={classes.root}
+          className={classes.container}
           alignItems="center"
           justify="center"
           wrap="nowrap"

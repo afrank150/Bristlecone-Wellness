@@ -3,34 +3,51 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 import BristleconePine from './IMG_0792.JPG';
 
 
 const styles = theme => ({
   root: {
-    display: 'table',
-    width: '100%',
-    height: 475,
-    padding: '0',
+    flexGrow: 1,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
     // backgroundImage: 'linear-gradient(#c0dece, transparent) !important',
-    [theme.breakpoints.down('md')]: {
-      width: '100% !important', // Overrides inline-style
-      height: 400,
-    },
-    [theme.breakpoints.down('sm')]: {
-      width: '100% !important', // Overrides inline-style
-      height: 325,
-    },
   },
   content: {
-    display: 'table-cell',
-    verticalAlign: 'middle',
+    paddingTop: theme.spacing.unit * 12,
+    paddingBottom: theme.spacing.unit * 6,
     textAlign: 'center',
     color: 'white',
     textTransform: 'uppercase',
+    [theme.breakpoints.down('md')]: {
+      paddingTop: theme.spacing.unit * 10,
+    },
+    [theme.breakpoints.down('sm')]: {
+      paddingTop: theme.spacing.unit * 8,
+      paddingBottom: theme.spacing.unit * 4,
+    },
+    [theme.breakpoints.down('xs')]: {
+      paddingTop: theme.spacing.unit * 4,
+    },
+  },
+  appointmentButton: {
+    paddingBottom: theme.spacing.unit * 10,
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.down('sm')]: {
+      paddingBottom: theme.spacing.unit * 8,
+    },
+  },
+  button: {
+    border: '3px solid #2d925e',
+    textTransform: 'none',
+    background: 'white',
+    '&:hover': {
+      background: theme.palette.primary[50],
+    },
   },
 });
 
@@ -38,26 +55,38 @@ function Splash(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root} style={{ backgroundImage: `url(${BristleconePine})` }}>
-      <Hidden xsDown>
-        <Typography variant="display4" className={classes.content}>
-          Be Strong
-          <br />
-          Be Resilient
-          <br />
-          Be Well
-        </Typography>
-      </Hidden>
-      <Hidden smUp>
-        <Typography variant="display3" className={classes.content}>
-          Be Strong
-          <br />
-          Be Resilient
-          <br />
-          Be Well
-        </Typography>
-      </Hidden>
-    </div>
+    <Grid container className={classes.root} style={{ backgroundImage: `url(${BristleconePine})` }}>
+      <Grid item xs={12}>
+        <Hidden smDown>
+          <Typography variant="display4" className={classes.content}>
+            Be Strong
+            <br />
+            Be Resilient
+            <br />
+            Be Well
+          </Typography>
+        </Hidden>
+        <Hidden mdUp>
+          <Typography variant="display3" className={classes.content}>
+            Be Strong
+            <br />
+            Be Resilient
+            <br />
+            Be Well
+          </Typography>
+        </Hidden>
+      </Grid>
+      <Grid item xs={12}>
+        <div className={classes.appointmentButton}>
+          <Button
+            className={classes.button}
+            href="https://acusimple.com/"
+          >
+            Make an Appointment
+          </Button>
+        </div>
+      </Grid>
+    </Grid>
   );
 }
 
