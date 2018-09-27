@@ -4,8 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
+import PrimaryButton from '../../_shared/PrimaryButton';
 import BristleconePine from './IMG_0792.JPG';
+import { APPOINTMENT_LINK } from '../../../constants/config';
 
 
 const styles = theme => ({
@@ -41,14 +42,6 @@ const styles = theme => ({
       paddingBottom: theme.spacing.unit * 8,
     },
   },
-  button: {
-    border: '3px solid #2d925e',
-    textTransform: 'none',
-    background: 'white',
-    '&:hover': {
-      background: theme.palette.primary[50],
-    },
-  },
 });
 
 function Splash(props) {
@@ -78,12 +71,7 @@ function Splash(props) {
       </Grid>
       <Grid item xs={12}>
         <div className={classes.appointmentButton}>
-          <Button
-            className={classes.button}
-            href="https://acusimple.com/"
-          >
-            Make an Appointment
-          </Button>
+          <PrimaryButton link={APPOINTMENT_LINK} title="Make an Appointment" />
         </div>
       </Grid>
     </Grid>

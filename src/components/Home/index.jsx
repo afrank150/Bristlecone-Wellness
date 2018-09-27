@@ -1,19 +1,16 @@
 import React from 'react';
-import Banner from '../_shared/Banner';
-import TopBar from '../_shared/TopBar';
-import NavBar from '../_shared/NavBar';
+import PageTemplate from '../_shared/PageTemplate';
 import Splash from './Splash';
 import Description from './Description';
+import Location from './Location';
 
 function Home() {
   return (
-    <div>
-      <Banner />
-      <TopBar />
-      <NavBar />
+    <PageTemplate>
       <Splash />
       <Description />
-    </div>
+      <Location />
+    </PageTemplate>
   );
 }
 

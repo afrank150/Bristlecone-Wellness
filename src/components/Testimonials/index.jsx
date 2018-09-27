@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Banner from '../_shared/Banner';
-import TopBar from '../_shared/TopBar';
-import NavBar from '../_shared/NavBar';
+import PageTemplate from '../_shared/PageTemplate';
 
 const styles = {
   text: {
@@ -17,14 +15,11 @@ function Services(props) {
   const { classes } = props;
 
   return (
-    <div>
-      <Banner />
-      <TopBar />
-      <NavBar />
+    <PageTemplate>
       <Typography variant="headline" className={classes.text}>
-        Services Coming Soon...
+        Resources Coming Soon...
       </Typography>
-    </div>
+    </PageTemplate>
   );
 }
 

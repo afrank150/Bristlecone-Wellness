@@ -5,13 +5,12 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import { PHONE_NUMBER, ADDRESS } from '../../constants/config';
+import { PHONE_NUMBER, ADDRESS } from '../../../../constants/config';
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.primary[100],
-    height: 28,
     margin: 0,
   },
   container: {

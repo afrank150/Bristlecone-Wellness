@@ -12,7 +12,7 @@ import Services from './components/Services';
 import Blog from './components/Blog';
 import Testimonials from './components/Testimonials';
 import Resources from './components/Resources';
-import Location from './components/Location';
+// import Location from './components/Location';
 import Contact from './components/Contact';
 
 const Routes = props => (
@@ -23,7 +23,7 @@ const Routes = props => (
       <Route path="/services" component={Services} />
       <Route path="/blog" component={Blog} />
       <Route path="/testimonials" component={Testimonials} />
-      <Route path="/location" component={Location} />
+      {/* <Route path="/location" component={Location} /> */}
       <Route path="/contact" component={Contact} />
       <Route path="/resources" component={Resources} />
     </Route>

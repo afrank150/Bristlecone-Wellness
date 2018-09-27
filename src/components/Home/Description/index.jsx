@@ -8,7 +8,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     padding: theme.spacing.unit * 4,
-    height: 800,
+    height: 400,
     textAlign: 'center',
   },
   header: {

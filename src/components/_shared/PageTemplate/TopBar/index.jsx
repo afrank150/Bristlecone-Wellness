@@ -11,7 +11,6 @@ const styles = theme => ({
   },
   topSection: {
     height: 220,
-    margin: 0,
     paddingRight: theme.spacing.unit * 2,
     paddingLeft: theme.spacing.unit * 2,
     [theme.breakpoints.down('sm')]: {
