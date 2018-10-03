@@ -44,7 +44,7 @@ const theme = createMuiTheme({
       fontFamily: '"Julius Sans One", sans-serif',
       fontWeight: 700,
       fontSize: '48px',
-      letterSpacing: '3px',
+      letterSpacing: '2px',
       textShadow: '2px 2px #666461',
     },
     display4: {
@@ -58,8 +58,9 @@ const theme = createMuiTheme({
       fontFamily: '"Julius Sans One", sans-serif',
       fontWeight: 600,
     },
-    title: {
-      fontFamily: '"Julius Sans One", sans-serif',
+    body2: {
+      fontSize: '16px',
+      fontWeight: 400,
     },
   },
   breakpoints: {

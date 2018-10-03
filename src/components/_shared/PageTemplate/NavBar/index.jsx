@@ -38,6 +38,10 @@ class NavBar extends Component {
     window.addEventListener('scroll', this.handleScroll);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener();
+  }
+
   getFixHeight() {
     const { width } = this.props;
     return ((isWidthUp('md', width) ? 247 : 187));

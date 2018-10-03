@@ -4,25 +4,43 @@ import { withStyles } from '@material-ui/core/styles';
 import Iframe from 'react-iframe';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import PrimaryButton from '../../_shared/PrimaryButton';
+import { APPOINTMENT_LINK, ADDRESS } from '../../../constants/config';
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
     background: theme.palette.primary[100],
-    padding: theme.spacing.unit * 3,
+    padding: theme.spacing.unit * 10,
     [theme.breakpoints.down('sm')]: {
-      padding: theme.spacing.unit * 2,
+      padding: theme.spacing.unit * 3,
     },
     [theme.breakpoints.down('xs')]: {
-      padding: theme.spacing.unit,
+      padding: theme.spacing.unit * 2,
+    },
+  },
+  textContainer: {
+    paddingRight: theme.spacing.unit * 6,
+  },
+  locatedText: {
+    paddingBottom: theme.spacing.unit * 2,
+  },
+  buildingLocation: {
+    paddingTop: theme.spacing.unit * 2,
+  },
+  appointmentButton: {
+    paddingTop: theme.spacing.unit * 6,
+    paddingBottom: theme.spacing.unit * 3,
+    [theme.breakpoints.down('sm')]: {
+      paddingTop: theme.spacing.unit * 3,
     },
   },
   mapItem: {
     display: 'flex',
     position: 'relative',
-    height: '600px',
+    height: '500px',
     [theme.breakpoints.down('sm')]: {
-      height: '450px',
+      height: '400px',
     },
   },
   map: {
@@ -36,18 +54,36 @@ function Location(props) {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={12} md={5}>
-          <Typography variant="headline">
-            Located in Northwest Denver
-          </Typography>
-          <Typography variant="body2">
-            4704 N Harlan St. Suite 340 Denver CO, 80212
-          </Typography>
+        <Grid item xs={12} md={5} className={classes.textContainer}>
+          <Grid container>
+            <Grid item xs={12}>
+              <Typography variant="headline" className={classes.locatedText}>
+                Located in Northwest Denver
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="body2">
+                Lakeside Office Park Building
+              </Typography>
+              <Typography variant="body2">
+                {ADDRESS}
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="body2" className={classes.buildingLocation}>
+                Our office is on the 3rd floor located in the
+                Alternative Family Medicine and Chiropractic business suite.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} className={classes.appointmentButton}>
+              <PrimaryButton link={APPOINTMENT_LINK} title="Book Online" />
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item xs={12} md={7} className={classes.mapItem}>
           <Iframe
             className={classes.map}
-            url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.092018691498!2d-105.06372948452587!3d39.78249027944396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b87bc7563616f%3A0xbaecbceea508ba00!2s4704+N+Harlan+St%2C+Denver%2C+CO+80212!5e0!3m2!1sen!2sus!4v1537719162719"
+            url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12264.367380314068!2d-105.0702955116667!3d39.78249417578199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b87bc7563616f%3A0xbaecbceea508ba00!2s4704+N+Harlan+St%2C+Denver%2C+CO+80212!5e0!3m2!1sen!2sus!4v1538202482441"
             allowfullscreen
           />
         </Grid>

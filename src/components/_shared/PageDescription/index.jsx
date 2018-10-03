@@ -7,33 +7,38 @@ import Typography from '@material-ui/core/Typography';
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    padding: theme.spacing.unit * 4,
-    height: 400,
+    paddingTop: theme.spacing.unit * 6,
+    padding: theme.spacing.unit * 3,
     textAlign: 'center',
   },
   header: {
     verticalAlign: 'middle',
-    marginBottom: theme.spacing.unit * 2,
+  },
+  divider: {
+    margin: 'auto',
+    width: '20%',
+    paddingTop: theme.spacing.unit,
+    paddingBottom: theme.spacing.unit * 4,
+    borderBottom: '1px solid black',
   },
 });
 
-function Description(props) {
-  const { classes } = props;
+function PageDescription(props) {
+  const { classes, text } = props;
 
   return (
     <div className={classes.root}>
       <Typography variant="headline" className={classes.header}>
-        Acupuncture and traditional Chinese medicine
+        {text}
       </Typography>
-      <Typography variant="body2" className={classes.body}>
-        Specializing in pain management and digestive health.
-      </Typography>
+      <div className={classes.divider} />
     </div>
   );
 }
 
-Description.propTypes = {
+PageDescription.propTypes = {
   classes: PropTypes.object.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
-export default withStyles(styles)(Description);
+export default withStyles(styles)(PageDescription);

@@ -1,14 +1,16 @@
 import React from 'react';
 import PageTemplate from '../_shared/PageTemplate';
+import PageDescription from '../_shared/PageDescription';
 import Splash from './Splash';
-import Description from './Description';
 import Location from './Location';
+import Offerings from './Offerings';
 
 function Home() {
   return (
     <PageTemplate>
       <Splash />
-      <Description />
+      <PageDescription text="Providing Acupuncture and Traditional Chinese Medicine" />
+      <Offerings />
       <Location />
     </PageTemplate>
   );

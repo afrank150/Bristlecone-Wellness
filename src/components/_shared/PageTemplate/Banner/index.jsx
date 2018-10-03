@@ -21,6 +21,7 @@ const styles = theme => ({
     height: '12px',
     width: '12px',
     verticalAlign: 'baseline',
+    paddingLeft: '8px',
   },
   iconText: {
     whiteSpace: 'nowrap',
