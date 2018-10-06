@@ -38,7 +38,7 @@ const styles = theme => ({
 class Offerings extends Component {
   constructor(props) {
     super(props);
-    this.state = { direction: 'foo' };
+    this.state = { direction: '' };
     this.setDirection = this.setDirection.bind(this);
   }
 
@@ -152,7 +152,7 @@ class Offerings extends Component {
           >
             <Grid item sm={5} xs={12}>
               <Typography variant="title" className={classes.header}>
-                {"We're a great choice for women's health and fertility"}
+                {"We are a great choice for women's health and fertility"}
               </Typography>
               <Typography variant="body2">
                 Whether you suffer from PMS symptoms or menopause, or are trying to

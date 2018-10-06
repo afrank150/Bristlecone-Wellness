@@ -51,8 +51,8 @@ function NavButtons(props) {
           </Button>
         </Grid>
         <Grid item sm={1}>
-          <Button className={classes.button} href="/location/">
-            location
+          <Button className={classes.button} href="/#location">
+              location
           </Button>
         </Grid>
         <Grid item sm={1}>
