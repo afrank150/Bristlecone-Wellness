@@ -1,30 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import PageTemplate from '../_shared/PageTemplate';
+import PageDescription from '../_shared/PageDescription';
+import AboutBristlecone from './AboutBristlecone';
+import Practitioners from './Practitioners';
 
-const styles = {
-  text: {
-    padding: 100,
-    textAlign: 'center',
-  },
-};
 
-function About(props) {
-  const { classes } = props;
-
+function About() {
   return (
     <PageTemplate>
-      <Typography variant="headline" className={classes.text}>
-        Resources Coming Soon...
-      </Typography>
+      <PageDescription text="About Us" />
+      <AboutBristlecone />
+      <PageDescription text="Practitioners" />
+      <Practitioners />
     </PageTemplate>
   );
 }
 
-About.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(About);
+export default About;
