@@ -6,16 +6,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';
+import pages from '../../../../../constants/pages';
 
-const options = [
-  'Home',
-  'About',
-  'Services',
-  'Testimonials',
-  'Resources',
-  'Location',
-  'Contact',
-];
 
 const ITEM_HEIGHT = 48;
 
@@ -66,14 +58,19 @@ class NavMenu extends React.Component {
             onClose={this.handleClose}
             PaperProps={{
               style: {
-                maxHeight: ITEM_HEIGHT * 4.5,
+                maxHeight: ITEM_HEIGHT * 8,
                 width: 200,
               },
             }}
           >
-            {options.map(option => (
-              <MenuItem key={option} onClick={this.handleClose}>
-                {option}
+            {pages.map(options => (
+              <MenuItem
+                key={options.name}
+                component="a"
+                href={options.href}
+                onClick={this.handleClose}
+              >
+                {options.name}
               </MenuItem>
             ))}
           </Menu>
