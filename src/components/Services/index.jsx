@@ -1,24 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import PageTemplate from '../_shared/PageTemplate';
+import PageDescription from '../_shared/PageDescription';
+import TreatmentTypes from './TreatmentTypes';
+import Pricing from './Pricing';
 
-const styles = {
-  text: {
-    padding: 100,
-    textAlign: 'center',
+
+const styles = theme => ({
+  rates: {
+    background: theme.palette.primary[100],
   },
-};
+});
 
 function Services(props) {
   const { classes } = props;
 
   return (
     <PageTemplate>
-      <Typography variant="headline" className={classes.text}>
-        Resources Coming Soon...
-      </Typography>
+      <PageDescription text="Services & Rates" />
+      <TreatmentTypes />
+      <div className={classes.rates}>
+        <Pricing />
+      </div>
     </PageTemplate>
   );
 }

@@ -8,6 +8,7 @@ const styles = {
   text: {
     padding: 100,
     textAlign: 'center',
+    height: '400px',
   },
 };
 
@@ -16,8 +17,8 @@ function Services(props) {
 
   return (
     <PageTemplate>
-      <Typography variant="headline" className={classes.text}>
-        Resources Coming Soon...
+      <Typography variant="title" className={classes.text}>
+        Testimonials Content is Coming Soon...
       </Typography>
     </PageTemplate>
   );

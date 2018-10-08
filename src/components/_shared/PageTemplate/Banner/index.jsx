@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import { PHONE_NUMBER, ADDRESS } from '../../../../constants/config';
+import { PHONE_NUMBER, ADDRESS, MAP_LINK } from '../../../../constants/config';
 
 const styles = theme => ({
   root: {
@@ -45,9 +45,11 @@ function Banner(props) {
             <PhoneIcon className={classes.icon} />
           </Grid>
           <Grid item className={classes.iconText}>
-            <Typography variant="caption">
-              { PHONE_NUMBER }
-            </Typography>
+            <a href={`tel: ${PHONE_NUMBER}`} style={{ textDecoration: 'none' }}>
+              <Typography variant="caption">
+                {PHONE_NUMBER}
+              </Typography>
+            </a>
           </Grid>
         </Grid>
       </Grid>
@@ -63,9 +65,11 @@ function Banner(props) {
             <LocationOnIcon className={classes.icon} />
           </Grid>
           <Grid item className={classes.iconText}>
-            <Typography variant="caption">
-              { ADDRESS }
-            </Typography>
+            <a href={MAP_LINK} style={{ textDecoration: 'none' }}>
+              <Typography variant="caption">
+                { ADDRESS }
+              </Typography>
+            </a>
           </Grid>
         </Grid>
       </Grid>

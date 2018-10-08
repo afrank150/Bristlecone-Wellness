@@ -88,7 +88,7 @@ class AboutBristlecone extends Component {
             justify="center"
             alignItems="center"
           >
-            <Grid item sm={6} xs={12}>
+            <Grid item sm={5} xs={12}>
               <Typography variant="body2">
                 Bristlecone Wellness is the place for you to connect with your body’s
                 innate ability to heal itself by tapping into your own resources and
@@ -102,7 +102,7 @@ class AboutBristlecone extends Component {
                 so you can be resilient and possess vitality, both in your health and life
                 goals, whether that is dealing with chronic pain, autoimmune diseases,
                 digestive health, fertility, or needing some emotional support.  Come in and
-                fine out how we can help you optimize your health!
+                find out how we can help you optimize your health!
               </Typography>
             </Grid>
             <Grid item sm={4} xs={12} className={classes.image}>

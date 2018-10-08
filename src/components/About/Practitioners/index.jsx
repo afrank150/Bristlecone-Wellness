@@ -74,25 +74,27 @@ class Practitioners extends Component {
             justify="center"
             alignItems="center"
           >
-            <Grid item sm={6} xs={12}>
+            <Grid item sm={5} xs={12}>
               <Typography variant="title" className={classes.header}>
                 Corinne Lohss, L.Ac., MSOM
               </Typography>
               <Typography variant="body2">
-                Corinne came to Traditional Chinese Medicine (TCM) after a
-                long search for a fulfilling career in the health care world. She always
+                Corinne came to Traditional Chinese Medicine (TCM) after a long
+                search for a fulfilling career in the health care world. She always
                 knew that she wanted to be a healer, but one who looks at the entire
-                individual as a whole, and not just a collection of symptoms that need to
-                be treated. Frustrated with aspects of the allopathic medical world when
-                dealing with some injuries, Corinne found TCM and realized it was the perfect
-                fit.  Corinne trained at Southwest Acupuncture College in Boulder, CO,
-                earning a masters degree in Oriental Medicine, graduating in 2018. She
-                incorporates all the modalities of TCM, including cupping, guasha, Shiatsu,
-                Tui Na, moxa, nutritional counseling, and herbal therapies. She also studied as
-                a Thai Massage therapist, yoga instructor, and uses a lot of bodywork techniques
-                in her treatments. Corinne has many areas of interest, including sports related
-                injuries, chronic pain, and digestive issues. See how a tailored personal session
-                with Corinne can help you get back to doing what you love and feel great.
+                individual as a whole, and not just a collection of symptoms that need
+                to be treated. Frustrated with aspects of the allopathic medical world
+                when dealing with some injuries, Corinne found TCM and realized it was
+                the perfect fit. Corinne trained at Southwest Acupuncture College in
+                Boulder, CO, earning a masters degree in Oriental Medicine, graduating
+                in 2018. She incorporates all the modalities of TCM, including cupping,
+                guasha, Shiatsu, Tui Na, moxa, nutritional counseling, and herbal therapies.
+                She also studied as a Thai Massage therapist, yoga instructor, and uses a
+                lot of bodywork techniques in her treatments. During school Corinne did a
+                year long externship at CU and treated many of the student athletes. Corinne
+                has many areas of interest, including sports related injuries, chronic pain,
+                digestive issues and women’s health. See how a tailored personal session with
+                Corinne can help you achieve your health goals.
               </Typography>
             </Grid>
             <Grid item sm={4} xs={12} className={classes.image}>

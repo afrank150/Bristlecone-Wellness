@@ -84,11 +84,9 @@ class Offerings extends Component {
                 Suffering with pain?
               </Typography>
               <Typography variant="body2">
-                Pain can put a serious damper on your day-to-day life and activities.
                 Whether you are dealing with an acute injury or chronic pain, here at
-                Bristlecone Wellness your specific needs will be addressed. See how we
-                can naturally get you back to doing what you love with acupuncture and
-                Traditional Chinese Medicine.
+                Bristlecone Wellness we will take a holistic approach to your treatment plan. See how we
+                can naturally get you back to doing what you love!
               </Typography>
             </Grid>
           </Grid>
@@ -107,9 +105,9 @@ class Offerings extends Component {
               </Typography>
               <Typography variant="body2">
                 Traditional Chinese medicine’s approach to internal medicine can majorly shift
-                your energy levels and well-being. With TCM you will be evaluated and prescribed
-                custom formulas and treatments alongside lifestyle and nutrition counseling that
-                is tailored to your individual needs.
+                your energy levels and well-being. At Bristlecone Wellness you will be evaluated
+                and prescribednpersonalized formulas and treatments alongside lifestyle and
+                nutrition counseling.
               </Typography>
             </Grid>
             <Grid item sm={5} xs={12} className={classes.image}>
@@ -130,14 +128,12 @@ class Offerings extends Component {
             </Grid>
             <Grid item sm={5} xs={12}>
               <Typography variant="title" className={classes.header}>
-                Seeking Digestive Health?
+                Seeking digestive health?
               </Typography>
               <Typography variant="body2">
-                Most people eat 3 meals a day- food is a very important part
-                of maintaining our health and energy. But for some, eating can
-                be a very uncomfortable experience. Let us help you find out what
-                your body needs to feel balanced, nourished and comfortable after
-                every meal.
+                Food is a very important part of maintaining our health and energy. But for
+                some, eating can be a very uncomfortable experience. Let us help you find out what
+                your body needs to feel balanced, nourished and comfortable.
               </Typography>
             </Grid>
           </Grid>
