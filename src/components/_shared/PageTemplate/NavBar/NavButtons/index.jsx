@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
+import pages from '../../../../../constants/pages';
 
 const styles = theme => ({
   root: {
@@ -25,41 +26,13 @@ function NavButtons(props) {
   return (
     <Hidden xsDown>
       <Grid container justify="space-around" className={classes.root}>
-        <Grid item sm={1}>
-          <Button className={classes.button} href="/">
-            home
-          </Button>
-        </Grid>
-        <Grid item sm={1}>
-          <Button className={classes.button} href="/about/">
-            about
-          </Button>
-        </Grid>
-        <Grid item sm={1}>
-          <Button className={classes.button} href="/services/">
-            services
-          </Button>
-        </Grid>
-        <Grid item sm={1}>
-          <Button className={classes.button} href="/testimonials/">
-            testimonials
-          </Button>
-        </Grid>
-        <Grid item sm={1}>
-          <Button className={classes.button} href="/resources/">
-            resources
-          </Button>
-        </Grid>
-        <Grid item sm={1}>
-          <Button className={classes.button} href="/#location">
-              location
-          </Button>
-        </Grid>
-        <Grid item sm={1}>
-          <Button className={classes.button} href="/contact/">
-            contact
-          </Button>
-        </Grid>
+        {pages.map(options => (
+          <Grid item sm={1}>
+            <Button className={classes.button} href={options.href}>
+              {options.name}
+            </Button>
+          </Grid>
+        ))}
       </Grid>
     </Hidden>
   );
