@@ -15,7 +15,6 @@ const styles = theme => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center center',
-    // backgroundImage: 'linear-gradient(#c0dece, transparent) !important',
   },
   content: {
     paddingTop: theme.spacing.unit * 12,

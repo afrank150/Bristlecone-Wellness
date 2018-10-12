@@ -28,9 +28,10 @@ function TopBar(props) {
       <Grid
         container
         alignItems="center"
+        justify="center"
         className={classes.topSection}
       >
-        <Grid item xs={12}>
+        <Grid item md={10} sm={11} xs={12}>
           <img src={logo} className="App-logo" alt="logo" />
         </Grid>
       </Grid>

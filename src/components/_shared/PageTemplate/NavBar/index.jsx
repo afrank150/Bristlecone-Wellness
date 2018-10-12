@@ -44,7 +44,7 @@ class NavBar extends Component {
 
   getFixHeight() {
     const { width } = this.props;
-    return ((isWidthUp('md', width) ? 247 : 187));
+    return ((isWidthUp('md', width) ? 249 : 225));
   }
 
   handleScroll() {

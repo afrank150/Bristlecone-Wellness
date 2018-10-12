@@ -85,8 +85,8 @@ class Offerings extends Component {
               </Typography>
               <Typography variant="body2">
                 Whether you are dealing with an acute injury or chronic pain, here at
-                Bristlecone Wellness we will take a holistic approach to your treatment plan. See how we
-                can naturally get you back to doing what you love!
+                Bristlecone Wellness we will take a holistic approach to your treatment plan.
+                See how we can naturally get you back to doing what you love!
               </Typography>
             </Grid>
           </Grid>
