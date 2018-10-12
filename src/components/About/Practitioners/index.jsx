@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
-import cori from './cori.jpg';
+import cori from './cori.jpeg';
 
 
 const styles = theme => ({
@@ -36,15 +36,12 @@ const styles = theme => ({
 class Practitioners extends Component {
   constructor(props) {
     super(props);
-    this.state = { direction: '' };
+    this.state = { direction: 'row' };
     this.setDirection = this.setDirection.bind(this);
   }
 
-  componentWillMount() {
-    this.setDirection();
-  }
-
   componentDidMount() {
+    this.setDirection();
     window.addEventListener('resize', this.setDirection);
   }
 

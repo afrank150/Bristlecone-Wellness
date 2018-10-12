@@ -5,10 +5,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
-import accupuncture from './accupuncture.jpg';
-import cupping from './cupping.jpg';
-import massage from './massage.jpg';
-import herbs from './herbs.jpg';
+import accupuncture from './accupuncture.jpeg';
+import cupping from './cupping.jpeg';
+import massage from './massage.jpeg';
+import herbs from './herbs.jpeg';
 import PrimaryButton from '../../_shared/PrimaryButton';
 import { APPOINTMENT_LINK } from '../../../constants/config';
 
@@ -41,15 +41,12 @@ const styles = theme => ({
 class TreatmentTypes extends Component {
   constructor(props) {
     super(props);
-    this.state = { direction: '' };
+    this.state = { direction: 'row' };
     this.setDirection = this.setDirection.bind(this);
   }
 
-  componentWillMount() {
-    this.setDirection();
-  }
-
   componentDidMount() {
+    this.setDirection();
     window.addEventListener('resize', this.setDirection);
   }
 

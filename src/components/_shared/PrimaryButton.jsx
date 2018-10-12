@@ -24,6 +24,8 @@ function PrimaryButton(props) {
     <Button
       className={classes.button}
       href={link}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {title}
     </Button>

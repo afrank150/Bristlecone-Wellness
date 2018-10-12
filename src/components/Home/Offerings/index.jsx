@@ -5,10 +5,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
-import pain from './pain.jpg';
-import sick from './sick.jpg';
-import digestive from './digestive.jpg';
-import women from './women.jpg';
+import pain from './pain.jpeg';
+import sick from './sick.jpeg';
+import digestive from './digestive.jpeg';
+import women from './women.jpeg';
 
 const styles = theme => ({
   root: {
@@ -38,15 +38,12 @@ const styles = theme => ({
 class Offerings extends Component {
   constructor(props) {
     super(props);
-    this.state = { direction: '' };
+    this.state = { direction: 'row' };
     this.setDirection = this.setDirection.bind(this);
   }
 
-  componentWillMount() {
-    this.setDirection();
-  }
-
   componentDidMount() {
+    this.setDirection();
     window.addEventListener('resize', this.setDirection);
   }
 

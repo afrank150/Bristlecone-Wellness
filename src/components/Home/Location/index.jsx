@@ -6,7 +6,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import PrimaryButton from '../../_shared/PrimaryButton';
-import { APPOINTMENT_LINK, ADDRESS } from '../../../constants/config';
+import { APPOINTMENT_LINK, ADDRESS, MAP_IFRAME } from '../../../constants/config';
 
 const styles = theme => ({
   root: {
@@ -85,7 +85,7 @@ function Location(props) {
           <Grid item xs={12} sm={6} md={7} className={classes.mapItem}>
             <Iframe
               className={classes.map}
-              url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12264.367380314068!2d-105.0702955116667!3d39.78249417578199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b87bc7563616f%3A0xbaecbceea508ba00!2s4704+N+Harlan+St%2C+Denver%2C+CO+80212!5e0!3m2!1sen!2sus!4v1538202482441"
+              url={MAP_IFRAME}
               allowfullscreen
             />
           </Grid>

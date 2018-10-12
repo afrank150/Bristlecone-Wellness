@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
 import Grid from '@material-ui/core/Grid';
 import PrimaryButton from '../../_shared/PrimaryButton';
-import BristleconePine from './IMG_0792.JPG';
+import splash from './splash.jpeg';
 import { APPOINTMENT_LINK } from '../../../constants/config';
 
 
@@ -20,6 +20,7 @@ const styles = theme => ({
     paddingTop: theme.spacing.unit * 12,
     paddingBottom: theme.spacing.unit * 6,
     textAlign: 'center',
+    whiteSpace: 'nowrap',
     color: 'white',
     textTransform: 'uppercase',
     [theme.breakpoints.down('md')]: {
@@ -47,7 +48,7 @@ function Splash(props) {
   const { classes } = props;
 
   return (
-    <Grid container className={classes.root} style={{ backgroundImage: `url(${BristleconePine})` }}>
+    <Grid container className={classes.root} style={{ backgroundImage: `url(${splash})` }}>
       <Grid item xs={12}>
         <Hidden smDown>
           <Typography variant="display4" className={classes.content}>
