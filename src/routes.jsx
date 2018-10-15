@@ -9,7 +9,6 @@ import App from './App';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
 import Resources from './components/Resources';
 import Contact from './components/Contact';
 
@@ -19,7 +18,6 @@ const Routes = props => (
       <IndexRoute component={Home} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
-      <Route path="/testimonials" component={Testimonials} />
       <Route path="/contact" component={Contact} />
       <Route path="/resources" component={Resources} />
     </Route>

@@ -12,10 +12,6 @@ const pages = [
     href: '/services',
   },
   {
-    name: 'Testimonials',
-    href: '/testimonials',
-  },
-  {
     name: 'Resources',
     href: '/resources',
   },

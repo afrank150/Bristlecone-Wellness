@@ -16,6 +16,8 @@ import facebookMessanger from './facebook-messenger.svg';
 const styles = theme => ({
   root: {
     flexGrow: 1,
+    paddingTop: theme.spacing.unit,
+    paddingBottom: theme.spacing.unit * 8,
     padding: theme.spacing.unit * 4,
     [theme.breakpoints.down('sm')]: {
       padding: theme.spacing.unit,

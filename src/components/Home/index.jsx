@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import PageTemplate from '../_shared/PageTemplate';
 import PageDescription from '../_shared/PageDescription';
 import Splash from './Splash';
@@ -8,6 +8,8 @@ import Offerings from './Offerings';
 import Intro from './Intro';
 
 function Home() {
+  configureAnchors({ offset: -50, scrollDuration: 400 });
+
   return (
     <PageTemplate>
       <Splash />
