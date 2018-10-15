@@ -43,7 +43,7 @@ const theme = createMuiTheme({
     display3: {
       fontFamily: '"Julius Sans One", sans-serif',
       fontWeight: 700,
-      fontSize: '48px',
+      fontSize: '40px',
       letterSpacing: '2px',
       textShadow: '2px 2px #534d3b',
     },

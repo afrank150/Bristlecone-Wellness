@@ -3,23 +3,22 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-// import PhoneIcon from '@material-ui/icons/Phone';
-// import LocationOnIcon from '@material-ui/icons/LocationOn';
-// import { PHONE_NUMBER, ADDRESS } from '../../../../constants/config';
+import Hidden from '@material-ui/core/Hidden';
 import logo2 from './logo2.svg';
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.primary[300],
+    paddingBottom: theme.spacing.unit * 3,
   },
   img: {
     height: '300px',
   },
   credit: {
     color: 'white',
-    paddingBottom: theme.spacing.unit * 3,
     whiteSpace: 'nowrap',
+    textAlign: 'center',
   },
 });
 
@@ -43,9 +42,19 @@ function BottomNav(props) {
           </a>
         </Grid>
         <Grid item xs={10}>
-          <Typography variant="caption" className={classes.credit}>
-            {'\u00A92018 Bristlecone Wellness, LLC \u00b7 Site By Alexander Frank'}
-          </Typography>
+          <Hidden xsDown>
+            <Typography variant="caption" className={classes.credit}>
+              {'\u00A92018 Bristlecone Wellness, LLC \u00b7 Site By Alexander Frank'}
+            </Typography>
+          </Hidden>
+          <Hidden smUp>
+            <Typography variant="caption" className={classes.credit}>
+              {'\u00A92018 Bristlecone Wellness, LLC'}
+            </Typography>
+            <Typography variant="caption" className={classes.credit}>
+              {'Site By Alexander Frank'}
+            </Typography>
+          </Hidden>
         </Grid>
       </Grid>
     </div>
