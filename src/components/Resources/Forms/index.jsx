@@ -16,7 +16,6 @@ const styles = theme => ({
   link: {
     color: theme.palette.primary[900],
     textDecoration: 'underline',
-    whiteSpace: 'nowrap',
   },
 });
 
