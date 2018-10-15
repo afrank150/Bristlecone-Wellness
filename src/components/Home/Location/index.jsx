@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Iframe from 'react-iframe';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import PrimaryButton from '../../_shared/PrimaryButton';
@@ -53,45 +52,43 @@ function Location(props) {
   const { classes } = props;
 
   return (
-    <ScrollableAnchor id="location">
-      <div className={classes.root}>
-        <Grid container justify="center">
-          <Grid item xs={12} sm={4} md={4} className={classes.textContainer}>
-            <Grid container>
-              <Grid item xs={12}>
-                <Typography variant="headline" className={classes.locatedText}>
-                  Located in Northwest Denver
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <Typography variant="body2">
-                  Lakeside Office Park Building
-                </Typography>
-                <Typography variant="body2">
-                  {ADDRESS}
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <Typography variant="body2" className={classes.buildingLocation}>
-                  Our office is on the 3rd floor located in the
-                  Alternative Family Medicine and Chiropractic business suite.
-                </Typography>
-              </Grid>
-              <Grid item xs={12} className={classes.appointmentButton}>
-                <PrimaryButton link={APPOINTMENT_LINK} title="Book Online" />
-              </Grid>
+    <div className={classes.root}>
+      <Grid container justify="center">
+        <Grid item xs={12} sm={4} md={4} className={classes.textContainer}>
+          <Grid container>
+            <Grid item xs={12}>
+              <Typography variant="headline" className={classes.locatedText}>
+                Located in Northwest Denver
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="body2">
+                Lakeside Office Park Building
+              </Typography>
+              <Typography variant="body2">
+                {ADDRESS}
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="body2" className={classes.buildingLocation}>
+                Our office is on the 3rd floor located in the
+                Alternative Family Medicine and Chiropractic business suite.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} className={classes.appointmentButton}>
+              <PrimaryButton link={APPOINTMENT_LINK} title="Book Online" />
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={6} md={7} className={classes.mapItem}>
-            <Iframe
-              className={classes.map}
-              url={MAP_IFRAME}
-              allowfullscreen
-            />
-          </Grid>
         </Grid>
-      </div>
-    </ScrollableAnchor>
+        <Grid item xs={12} sm={6} md={7} className={classes.mapItem}>
+          <Iframe
+            className={classes.map}
+            url={MAP_IFRAME}
+            allowfullscreen
+          />
+        </Grid>
+      </Grid>
+    </div>
   );
 }
 

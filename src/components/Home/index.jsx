@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import PageTemplate from '../_shared/PageTemplate';
 import PageDescription from '../_shared/PageDescription';
 import Splash from './Splash';
@@ -13,7 +14,9 @@ function Home() {
       <PageDescription text="Providing Acupuncture and Traditional Chinese Medicine" />
       <Intro />
       <Offerings />
-      <Location />
+      <ScrollableAnchor id="location">
+        <Location />
+      </ScrollableAnchor>
     </PageTemplate>
   );
 }

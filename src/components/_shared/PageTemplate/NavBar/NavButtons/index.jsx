@@ -27,7 +27,7 @@ function NavButtons(props) {
     <Hidden xsDown>
       <Grid container justify="space-around" className={classes.root}>
         {pages.map(options => (
-          <Grid item sm={1}>
+          <Grid item sm={1} key={options.name}>
             <Button className={classes.button} href={options.href}>
               {options.name}
             </Button>

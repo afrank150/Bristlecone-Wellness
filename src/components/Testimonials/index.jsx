@@ -18,7 +18,7 @@ function Services(props) {
   return (
     <PageTemplate>
       <Typography variant="title" className={classes.text}>
-        Testimonials Content is Coming Soon...
+        Testimonials are Coming Soon...
       </Typography>
     </PageTemplate>
   );

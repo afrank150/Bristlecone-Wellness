@@ -87,7 +87,7 @@ class AboutBristlecone extends Component {
           >
             <Grid item sm={5} xs={12}>
               <Typography variant="body2">
-                Bristlecone Wellness is the place for you to connect with your body’s
+                {`Bristlecone Wellness is the place for you to connect with your body’s
                 innate ability to heal itself by tapping into your own resources and
                 allowing for imbalance to become balance. Bristlecone pines are some
                 of the oldest trees in North America- the oldest clocking in around
@@ -99,7 +99,7 @@ class AboutBristlecone extends Component {
                 so you can be resilient and possess vitality, both in your health and life
                 goals, whether that is dealing with chronic pain, autoimmune diseases,
                 digestive health, fertility, or needing some emotional support.  Come in and
-                find out how we can help you optimize your health!
+                find out how we can help you optimize your health!`}
               </Typography>
             </Grid>
             <Grid item sm={4} xs={12} className={classes.image}>

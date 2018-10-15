@@ -62,6 +62,9 @@ const theme = createMuiTheme({
       fontSize: '16px',
       fontWeight: 400,
     },
+    caption: {
+      fontWeight: 100,
+    },
   },
   breakpoints: {
     values: {
