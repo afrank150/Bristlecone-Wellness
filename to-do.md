@@ -4,6 +4,7 @@
 * ~~Figure out how to not use componentWillMount~~
 * ~~Open links in a new tab~~
 * ~~Use pages constant in NavButtons~~
+* ~~redirect not found to home~~
 * Fix scrolling to a location from separate page
 * Refactor Offerings component for better re-use
 * Create component for title header and body2 text (oferrings, FAQ, services)
@@ -12,5 +13,4 @@
 * Break out the large blocks of text from components
 * Tooltips on social in banner
 * Make facebook messanger icon green in contact
-* set up 404 not found page
 * fix bottom banner and fixed scroll in IE11
