@@ -4,6 +4,7 @@ import {
   Route,
   IndexRoute,
   browserHistory,
+  Redirect,
 } from 'react-router';
 import App from './App';
 import Home from './components/Home';
@@ -20,6 +21,7 @@ const Routes = props => (
       <Route path="/services" component={Services} />
       <Route path="/contact" component={Contact} />
       <Route path="/resources" component={Resources} />
+      <Redirect from="/*" to="/" />
     </Route>
   </Router>
 );
