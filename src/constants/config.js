@@ -12,7 +12,7 @@ export const APPOINTMENT_LINK = 'https://app.acuityscheduling.com/schedule.php?o
 
 // Social Links
 export const FACEBOOK_LINK = 'https://www.facebook.com/bristleconewellness/';
-export const FACEBOOK_MESSANGER = 'https://m.me/bristleconewellness';
+export const FACEBOOK_MESSENGER = 'https://m.me/bristleconewellness';
 export const INSTAGRAM_LINK = 'https://www.instagram.com/bristlecone_wellness/';
 
 // Patient Forms

@@ -10,6 +10,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.primary[300],
+    paddingBottom: theme.spacing.unit * 3,
   },
   img: {
     height: '300px',
@@ -18,7 +19,6 @@ const styles = theme => ({
     color: 'white',
     whiteSpace: 'nowrap',
     textAlign: 'center',
-    paddingBottom: theme.spacing.unit * 3,
   },
 });
 

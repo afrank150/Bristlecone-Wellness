@@ -101,9 +101,9 @@ class Offerings extends Component {
                 Sick and tired of being sick and tired?
               </Typography>
               <Typography variant="body2">
-                Traditional Chinese medicine’s approach to internal medicine can majorly shift
+                Traditional Chinese Medicine’s approach to internal medicine can majorly shift
                 your energy levels and well-being. At Bristlecone Wellness you will be evaluated
-                and prescribednpersonalized formulas and treatments alongside lifestyle and
+                and prescribed personalized formulas and treatments alongside lifestyle and
                 nutrition counseling.
               </Typography>
             </Grid>

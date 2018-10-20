@@ -8,10 +8,10 @@ import PageDescription from '../_shared/PageDescription';
 import {
   APPOINTMENT_LINK,
   PHONE_NUMBER,
-  FACEBOOK_MESSANGER,
+  FACEBOOK_MESSENGER,
   EMAIL,
 } from '../../constants/config';
-import facebookMessanger from './facebook-messenger.svg';
+import facebookMessenger from './facebook-messenger.svg';
 
 const styles = theme => ({
   root: {
@@ -111,23 +111,23 @@ function Contact(props) {
                   {'Connect: '}
                 </b>
                 <a
-                  href={FACEBOOK_MESSANGER}
+                  href={FACEBOOK_MESSENGER}
                   className={classes.messanger}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {'Facebook Messanger'}
+                  {'Facebook Messenger'}
                 </a>
               </Typography>
             </Grid>
             <Grid item>
               <a
-                href={FACEBOOK_MESSANGER}
+                href={FACEBOOK_MESSENGER}
                 style={{ textDecoration: 'none' }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={facebookMessanger} alt="facebookMessanger" className={classes.socialIcon} />
+                <img src={facebookMessenger} alt="facebookMessenger" className={classes.socialIcon} />
               </a>
             </Grid>
           </Grid>
