@@ -11,10 +11,13 @@ export const MAP_IFRAME = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1
 export const APPOINTMENT_LINK = 'https://app.acuityscheduling.com/schedule.php?owner=16704045';
 
 // Social Links
-export const FACEBOOK_LINK = 'https://www.facebook.com/bristleconewellness/';
-export const FACEBOOK_MESSENGER = 'https://m.me/bristleconewellness';
+export const FACEBOOK_LINK = 'https://www.facebook.com/Bristlecone-Wellness-LLC-2036186099778852/';
+export const FACEBOOK_MESSENGER = 'https://m.me/2036186099778852';
 export const INSTAGRAM_LINK = 'https://www.instagram.com/bristlecone_wellness/';
 
 // Patient Forms
 export const NEW_PATIENT_FORM = 'https://s3.amazonaws.com/bristlecone-wellness-resources/New-Patient.pdf';
 export const MANDATORY_DISCLOSURE = 'https://s3.amazonaws.com/bristlecone-wellness-resources/Mandatory-Disclosure-Statement.pdf';
+
+// Alternative Family Medicine Link
+export const ALT_FAM_LINK = 'https://altfammed.com/';

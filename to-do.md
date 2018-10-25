@@ -13,3 +13,4 @@
 * Tooltips on social in banner
 * Make facebook messenger icon green in contact
 * fix bottom banner and fixed scroll in IE11
+* create component for linked text
