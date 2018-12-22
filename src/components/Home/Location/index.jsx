@@ -5,6 +5,7 @@ import Iframe from 'react-iframe';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import PrimaryButton from '../../_shared/PrimaryButton';
+import LinkedText from '../../_shared/LinkedText';
 import {
   APPOINTMENT_LINK,
   ADDRESS, MAP_IFRAME,
@@ -31,10 +32,6 @@ const styles = theme => ({
   },
   buildingLocation: {
     paddingTop: theme.spacing.unit * 2,
-  },
-  link: {
-    color: theme.palette.primary[900],
-    textDecoration: 'underline',
   },
   appointmentButton: {
     paddingTop: theme.spacing.unit * 6,
@@ -80,14 +77,11 @@ function Location(props) {
             <Grid item xs={12}>
               <Typography variant="body2" className={classes.buildingLocation}>
                 {'Our office is on the 3rd floor located in the '}
-                <a
-                  href={ALT_FAM_LINK}
-                  className={classes.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {'Alternative Family Medicine and Chiropractic'}
-                </a>
+                <LinkedText
+                  link={ALT_FAM_LINK}
+                  text="Alternative Family Medicine and Chiropractic"
+                  newPage
+                />
                 {' business suite.'}
               </Typography>
             </Grid>

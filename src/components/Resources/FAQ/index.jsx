@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import Grid from '@material-ui/core/Grid';
+import LinkedText from '../../_shared/LinkedText';
 
 
 const styles = theme => ({
@@ -111,9 +112,7 @@ function Forms(props) {
             {faq.map(item => (
               <Typography variant="body2" key={item.id}>
                 {'\u2022 '}
-                <a href={item.href} className={classes.link}>
-                  {item.question}
-                </a>
+                <LinkedText link={item.href} text={item.question} />
               </Typography>))}
           </Grid>
           {faq.map(item => (

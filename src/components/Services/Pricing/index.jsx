@@ -53,7 +53,7 @@ function Pricing(props) {
               For new patients to the clinic
             </Typography>
             <Typography variant="title" className={classes.price}>
-              $90
+              $95
             </Typography>
           </Grid>
           <Grid item sm={3} xs={12}>

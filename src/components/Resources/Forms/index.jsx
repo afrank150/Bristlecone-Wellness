@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import LinkedText from '../../_shared/LinkedText';
 import { NEW_PATIENT_FORM } from '../../../constants/config';
 
 
@@ -12,10 +13,6 @@ const styles = theme => ({
     paddingTop: theme.spacing.unit * 8,
     paddingBottom: theme.spacing.unit * 4,
     padding: theme.spacing.unit * 3,
-  },
-  link: {
-    color: theme.palette.primary[900],
-    textDecoration: 'underline',
   },
 });
 
@@ -52,16 +49,12 @@ function Forms(props) {
           >
             <Typography variant="body2">
               {'For new patients coming to the clinic, we have an intake form for you to fill out. You can come to your appointment 15 minutes early or '}
-              <a
-                href={NEW_PATIENT_FORM}
-                className={classes.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <b>
-                  {'download the new patient form here'}
-                </b>
-              </a>
+              <LinkedText
+                link={NEW_PATIENT_FORM}
+                text="download the new patient form here"
+                bold
+                newPage
+              />
               {' and bring it with you to your first visit.'}
             </Typography>
           </Grid>

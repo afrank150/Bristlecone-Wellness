@@ -12,6 +12,7 @@ import {
   EMAIL,
 } from '../../constants/config';
 import facebookMessenger from './facebook-messenger.svg';
+import LinkedText from '../_shared/LinkedText';
 
 const styles = theme => ({
   root: {
@@ -31,16 +32,6 @@ const styles = theme => ({
       paddingTop: theme.spacing.unit * 3,
       paddingBottom: theme.spacing.unit * 3,
     },
-  },
-  link: {
-    color: theme.palette.primary[900],
-    textDecoration: 'underline',
-    whiteSpace: 'nowrap',
-  },
-  messanger: {
-    color: theme.palette.primary[900],
-    whiteSpace: 'nowrap',
-    textDecoration: 'underline',
   },
   socialIcon: {
     fill: theme.palette.primary[900],
@@ -67,14 +58,12 @@ function Contact(props) {
         <Grid item xs={11} sm={7} md={6} className={classes.item}>
           <Typography variant="body2">
             {'Please feel free to contact us with any questions. If you would like to make an appointment call us today or '}
-            <a
-              href={APPOINTMENT_LINK}
-              className={classes.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {'schedule online'}
-            </a>
+            <LinkedText
+              link={APPOINTMENT_LINK}
+              text="schedule online"
+              noWrap
+              newPage
+            />
             {'.'}
           </Typography>
         </Grid>
@@ -83,9 +72,7 @@ function Contact(props) {
             <b>
               {'Phone: '}
             </b>
-            <a href={`tel: ${PHONE_NUMBER}`} className={classes.link}>
-              {PHONE_NUMBER}
-            </a>
+            <LinkedText link={`tel: ${PHONE_NUMBER}`} text={PHONE_NUMBER} />
           </Typography>
         </Grid>
         <Grid item xs={12} className={classes.item}>
@@ -93,9 +80,7 @@ function Contact(props) {
             <b>
               {'Email: '}
             </b>
-            <a href={`mailto: ${EMAIL}`} className={classes.link}>
-              {EMAIL}
-            </a>
+            <LinkedText link={`mailto: ${EMAIL}`} text={EMAIL} />
           </Typography>
         </Grid>
         <Grid item xs={12} className={classes.item}>
@@ -110,14 +95,12 @@ function Contact(props) {
                 <b>
                   {'Connect: '}
                 </b>
-                <a
-                  href={FACEBOOK_MESSENGER}
-                  className={classes.messanger}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {'Facebook Messenger'}
-                </a>
+                <LinkedText
+                  link={FACEBOOK_MESSENGER}
+                  text="Facebook Messenger"
+                  noWrap
+                  newPage
+                />
               </Typography>
             </Grid>
             <Grid item>
