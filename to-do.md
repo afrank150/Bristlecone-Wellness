@@ -5,7 +5,8 @@
 * ~~Open links in a new tab~~
 * ~~Use pages constant in NavButtons~~
 * ~~redirect not found to home~~
-* ~~create component for linked text
+* ~~create component for linked text~~
+* ~~change main logo for mobile view~~
 * Fix scrolling to a location from separate page
 * Refactor Offerings component for better re-use
 * Create component for title header and body2 text (oferrings, FAQ, services)

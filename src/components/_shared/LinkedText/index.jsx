@@ -62,12 +62,19 @@ function LinkedText(props) {
 
 LinkedText.propTypes = {
   classes: PropTypes.object.isRequired,
-  className: PropTypes.object.isRequired,
   link: PropTypes.string.isRequired,
-  bold: PropTypes.bool.isRequired,
-  noWrap: PropTypes.bool.isRequired,
-  newPage: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
+  className: PropTypes.object,
+  bold: PropTypes.bool,
+  noWrap: PropTypes.bool,
+  newPage: PropTypes.bool,
+};
+
+LinkedText.defaultProps = {
+  className: null,
+  bold: false,
+  noWrap: false,
+  newPage: false,
 };
 
 export default withStyles(styles)(LinkedText);
