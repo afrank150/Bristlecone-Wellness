@@ -9,6 +9,7 @@
 * ~~change main logo for mobile view~~
 * Fix scrolling to a location from separate page
 * Refactor Offerings component for better re-use
+* Refactor Pricing Table for better re-use
 * Create component for title header and body2 text (oferrings, FAQ, services)
 * Drop down list on services NavButton and anchor each service
 * Break out the large blocks of text from components

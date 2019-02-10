@@ -137,6 +137,12 @@ function Pricing(props) {
               $270
             </Typography>
           </Grid>
+          <Grid item xs={12} style={{ paddingTop: 64 }}>
+            <Typography variant="body1" style={{ textAlign: 'center', fontStyle: 'italic' }}>
+              Accepting payment from a Health Saving Account (HSA) or a Flex Spending Account (FSA)
+              for qualified expenses.
+            </Typography>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
