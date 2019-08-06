@@ -150,7 +150,7 @@ class Offerings extends Component {
               <Typography variant="body2">
                 Whether you suffer from PMS symptoms or menopause, or are trying to
                 get pregnant, or are looking for support with pregnancy, here at
-                Bristlecone Wellness we’ve got your covered.  Acupuncture and
+                Bristlecone Wellness we’ve got you covered.  Acupuncture and
                 Traditional Chinese Medicine have been shown to be safe and effective
                 ways to help with these issues that many women face during their lifetime.
                 Don’t wait, make an appointment today!
