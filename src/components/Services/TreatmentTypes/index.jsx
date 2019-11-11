@@ -9,6 +9,8 @@ import accupuncture from './accupuncture.jpeg';
 import cupping from './cupping.jpeg';
 import massage from './massage.jpeg';
 import herbs from './herbs.jpeg';
+import cosmetic from './cosmetic.jpeg';
+import celluma from './celluma.jpeg';
 import PrimaryButton from '../../_shared/PrimaryButton';
 import { APPOINTMENT_LINK } from '../../../constants/config';
 
@@ -166,12 +168,63 @@ class TreatmentTypes extends Component {
           >
             <Grid item sm={6} xs={12}>
               <Typography variant="title" className={classes.header}>
+               Cosmetic Acupuncture
+              </Typography>
+              <Typography variant="body2">
+              The Mei Zen Cosmetic Acupuncture protocol was designed to help with the
+              overall appearance and feel of the skin and is rooted in
+              TCM (Traditional Chinese Medicine Theory).  It is a 10 treatment
+              non-invasive protocol that takes place twice a week over 5 weeks.
+              </Typography>
+            </Grid>
+            <Grid item sm={3} xs={12} className={classes.image}>
+              <img src={cosmetic} className={classes.img} alt="cosmetic" />
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={12} style={{ paddingTop: 64 }}>
+          <Grid
+            container
+            spacing={40}
+            direction={direction}
+            justify="center"
+            alignItems="center"
+          >
+            <Grid item sm={6} xs={12}>
+              <Typography variant="title" className={classes.header}>
+               LED Light Therapy
+              </Typography>
+              <Typography variant="body2">
+               Light Emitting Diode (LED) therapy promotes a natural photobiochemical
+               reaction in the body similar to the process of plant photosynthesis.
+               The energy delivered by the LEDs has been shown to promote cellular
+               metabolism, accelerate the repair and replenishment of damaged skin cells,
+               as well as stimulate the production of collagen.  Bristlecone Wellness uses
+               LED therapy to treat conditions such as acne, wrinkles, fine lines,
+               sports injuries and arthritis.
+              </Typography>
+            </Grid>
+            <Grid item sm={3} xs={12} className={classes.image}>
+              <img src={celluma} className={classes.img} alt="celluma" />
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={12} style={{ paddingTop: 64 }}>
+          <Grid
+            container
+            spacing={40}
+            direction={direction}
+            justify="center"
+            alignItems="center"
+          >
+            <Grid item sm={6} xs={12}>
+              <Typography variant="title" className={classes.header}>
                Body Work
               </Typography>
               <Typography variant="body2">
-                We include many styles in our bodywork treatments, specifically
-                Tui Na, which can best be described as medical massage that is
-                applied to acupuncture points. We also use Shiatsu and Thai Massage,
+                Bristlecone Wellness utilizes many styles in our bodywork treatments,
+                specifically Tui Na, which can best be described as medical massage
+                that is applied to acupuncture points. We also use Shiatsu and Thai Massage,
                 which are similar to Tui Na, and includes an element of stretching and
                 joint manipulation. These modalities are beneficial for everyone, but
                 perhaps especially people who don’t tolerate needles well or who both
