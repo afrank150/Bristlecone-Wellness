@@ -58,7 +58,7 @@ function Pricing(props) {
           </Grid>
           <Grid item sm={3} xs={12}>
             <Typography variant="title" className={classes.title}>
-             Follow Up Treatment
+              Acupuncture Follow-Up
             </Typography>
             <Typography variant="body1" style={{ textAlign: 'center' }}>
               (60 minutes)
@@ -72,16 +72,16 @@ function Pricing(props) {
           </Grid>
           <Grid item sm={3} xs={12}>
             <Typography variant="title" className={classes.title}>
-              Herb Only Consult
+              Acupuncture Follow-Up + LED Therapy
             </Typography>
             <Typography variant="body1" style={{ textAlign: 'center' }}>
-              (30 minutes)
+              (60 minutes)
             </Typography>
             <Typography variant="body2" className={classes.descriptions}>
-              Comprehensive evalutation for a custom formula
+              Acupunture with the healing benefits of LED therapy
             </Typography>
             <Typography variant="title" className={classes.price}>
-              $40
+              $95
             </Typography>
           </Grid>
         </Grid>
@@ -94,6 +94,20 @@ function Pricing(props) {
           justify="center"
           alignItems="flex-start"
         >
+          <Grid item sm={3} xs={12}>
+            <Typography variant="title" className={classes.title}>
+              Cosmetic Acupuncture
+            </Typography>
+            <Typography variant="body1" style={{ textAlign: 'center' }}>
+              (75 minutes)
+            </Typography>
+            <Typography variant="body2" className={classes.descriptions}>
+              Facial acupuncture + LED therapy to imporve skin complexion and tone
+            </Typography>
+            <Typography variant="title" className={classes.price}>
+              $125
+            </Typography>
+          </Grid>
           <Grid item sm={3} xs={12}>
             <Typography variant="title" className={classes.title}>
               Cupping Session
@@ -111,7 +125,7 @@ function Pricing(props) {
           </Grid>
           <Grid item sm={3} xs={12}>
             <Typography variant="title" className={classes.title}>
-             Massage
+              Massage
             </Typography>
             <Typography variant="body1" style={{ textAlign: 'center' }}>
               (60 or 90 minutes)
@@ -123,24 +137,15 @@ function Pricing(props) {
               $75 / $90
             </Typography>
           </Grid>
-          <Grid item sm={3} xs={12}>
-            <Typography variant="title" className={classes.title}>
-              Follow Up Treatment 4-pack
-            </Typography>
-            <Typography variant="body1" style={{ textAlign: 'center' }}>
-              (60 minutes each)
-            </Typography>
-            <Typography variant="body2" className={classes.descriptions}>
-              Recieve 10% off when booking 4 appointments
-            </Typography>
-            <Typography variant="title" className={classes.price}>
-              $270
-            </Typography>
-          </Grid>
           <Grid item xs={12} style={{ paddingTop: 64 }}>
             <Typography variant="body1" style={{ textAlign: 'center', fontStyle: 'italic' }}>
               Accepting payment from a Health Saving Account (HSA) or a Flex Spending Account (FSA)
               for qualified expenses.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} style={{ paddingTop: 16 }}>
+            <Typography variant="body1" style={{ textAlign: 'center', fontStyle: 'italic' }}>
+              Ask about our package deals for a 10% discount!
             </Typography>
           </Grid>
         </Grid>
