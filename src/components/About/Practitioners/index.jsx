@@ -114,7 +114,7 @@ class Practitioners extends Component {
           >
             <Grid item sm={5} xs={12}>
               <Typography variant="title" className={classes.header}>
-                Michelle Dorak, L.Ac., MSOM
+                Michelle Dorak, L.Ac.
               </Typography>
               <Typography variant="body2">
               Michelle earned her Master’s degree in acupuncture from the Southwest Acupuncture
