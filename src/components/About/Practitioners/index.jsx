@@ -6,7 +6,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import cori from './cori.jpeg';
-import michelle from './michelle.jpeg';
 
 
 const styles = theme => ({
@@ -101,50 +100,6 @@ class Practitioners extends Component {
             </Grid>
             <Grid item sm={4} xs={12} className={classes.image}>
               <img src={cori} className={classes.img} alt="cori" />
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={12} style={{ paddingTop: 84 }}>
-          <Grid
-            container
-            spacing={40}
-            direction={direction}
-            justify="center"
-            alignItems="center"
-          >
-            <Grid item sm={5} xs={12}>
-              <Typography variant="title" className={classes.header}>
-                Michelle Dorak, L.Ac.
-              </Typography>
-              <Typography variant="body2">
-              Michelle earned her Master’s degree in acupuncture from the Southwest Acupuncture
-              College in Boulder, Colorado. She is recognized by the National Certification
-              Commission for Acupuncture and Oriental Medicine (NCCOAM) as a certified
-              acupuncturist and is licensed by the state of Colorado. Michelle completed the
-              Acupuncturists Without Borders Level 1 Training, Healing Community Trauma,
-              in January of 2018. She feels acupuncture is an excellent way to support the
-              journey of healing from mental, physical, and emotional trauma, and is eager
-              to share this knowledge with the individuals that she cares for.
-                <p>
-              Michelle is humbled to be working with the Mental Health Partners in Lafayette,
-              Colorado, and their Moving to End Sexual Assault (MESA) program.  Here she provides a
-              weekly auricular acupuncture clinic to survivors of sexual assault.
-                </p>
-                <p>
-              Michelle has her bachelor’s degree in Exercise Science from Salisbury University
-              and has taught yoga for over 10 years, both on the east coast and here, in Colorado.
-              In the Fall of 2019 she participated in the Veterans Yoga Project’s
-              Mindful Resilience Training. This training supports one of Michelle’s
-              goals of sharing her passion for yoga with veterans.
-                </p>
-                <p>
-              For fun, she loves to get outside with her adorable dog Sammie,
-              go running and swimming, and spend time with family and friends.
-                </p>
-              </Typography>
-            </Grid>
-            <Grid item sm={4} xs={12} className={classes.image}>
-              <img src={michelle} className={classes.img} alt="michelle" />
             </Grid>
           </Grid>
         </Grid>
