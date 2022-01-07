@@ -53,7 +53,7 @@ function Pricing(props) {
               For new patients to the clinic
             </Typography>
             <Typography variant="title" className={classes.price}>
-              $95
+              $110
             </Typography>
           </Grid>
           <Grid item sm={3} xs={12}>
@@ -67,7 +67,7 @@ function Pricing(props) {
               A personalized treatment based on your needs and constitution
             </Typography>
             <Typography variant="title" className={classes.price}>
-              $75
+              $85
             </Typography>
           </Grid>
           <Grid item sm={3} xs={12}>
@@ -81,7 +81,7 @@ function Pricing(props) {
               Acupunture with the healing benefits of LED therapy
             </Typography>
             <Typography variant="title" className={classes.price}>
-              $95
+              $105
             </Typography>
           </Grid>
         </Grid>
@@ -105,7 +105,7 @@ function Pricing(props) {
               Facial acupuncture + LED therapy to imporve skin complexion and tone
             </Typography>
             <Typography variant="title" className={classes.price}>
-              $125
+              $150
             </Typography>
           </Grid>
           <Grid item sm={3} xs={12}>
@@ -113,19 +113,19 @@ function Pricing(props) {
               Cupping Session
             </Typography>
             <Typography variant="body1" style={{ textAlign: 'center' }}>
-              (20 minutes)
+              (30 minutes)
             </Typography>
             <Typography variant="body2" className={classes.descriptions}>
               A quicker visit to promote circulation for healing, recovery, and to
               relieve muscle tension
             </Typography>
             <Typography variant="title" className={classes.price}>
-              $20
+              $45
             </Typography>
           </Grid>
           <Grid item sm={3} xs={12}>
             <Typography variant="title" className={classes.title}>
-              Massage
+              Body Work
             </Typography>
             <Typography variant="body1" style={{ textAlign: 'center' }}>
               (60 or 90 minutes)
@@ -134,7 +134,7 @@ function Pricing(props) {
               Offering a combination of Tui Na, Thai massage, and Shiatsu.
             </Typography>
             <Typography variant="title" className={classes.price}>
-              $75 / $90
+              $85 / $105
             </Typography>
           </Grid>
           <Grid item xs={12} style={{ paddingTop: 64 }}>

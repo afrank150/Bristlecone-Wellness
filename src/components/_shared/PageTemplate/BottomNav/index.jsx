@@ -44,12 +44,12 @@ function BottomNav(props) {
         <Grid item xs={10}>
           <Hidden xsDown>
             <Typography variant="caption" className={classes.credit}>
-              {'\u00A92018 Bristlecone Wellness, LLC \u00b7 Site By Alexander Frank'}
+              {'\u00A92022 Bristlecone Wellness, LLC \u00b7 Site By Alexander Frank'}
             </Typography>
           </Hidden>
           <Hidden smUp>
             <Typography variant="caption" className={classes.credit}>
-              {'\u00A92018 Bristlecone Wellness, LLC'}
+              {'\u00A92022 Bristlecone Wellness, LLC'}
             </Typography>
             <Typography variant="caption" className={classes.credit}>
               {'Site By Alexander Frank'}
