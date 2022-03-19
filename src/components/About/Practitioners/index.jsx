@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
 import cori from './cori.jpeg';
+import sarah from './sarah.jpeg';
 
 
 const styles = theme => ({
@@ -22,11 +23,17 @@ const styles = theme => ({
   image: {
     maxWidth: 800,
   },
-  img: {
+  coriImg: {
     margin: 'auto',
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
+  },
+  sarahImg: {
+    margin: 'auto',
+    display: 'block',
+    maxWidth: '75%',
+    maxHeight: '75%',
   },
   header: {
     paddingBottom: theme.spacing.unit * 3,
@@ -99,7 +106,43 @@ class Practitioners extends Component {
               </Typography>
             </Grid>
             <Grid item sm={4} xs={12} className={classes.image}>
-              <img src={cori} className={classes.img} alt="cori" />
+              <img src={cori} className={classes.coriImg} alt="cori" />
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={12} style={{ paddingTop: 84 }}>
+          <Grid
+            container
+            spacing={40}
+            direction={direction}
+            justify="center"
+            alignItems="center"
+          >
+            <Grid item sm={5} xs={12}>
+              <Typography variant="title" className={classes.header}>
+                Sarah Cowley, L.Ac.
+              </Typography>
+              <Typography variant="body2">
+                Sarah discovered Chinese medicine from a climbing injury that left her in pain
+                for a long time. She knew she wanted to understand the source of her pain without
+                masking it with medication so she pursued alternative options and discovered
+                acupuncture. Her pain was relieved almost immediately. After continued treatment
+                she also discovered significant improvement with both her mental health, and
+                endometriosis which blew her away. This paved the way for her to want to share
+                this relief with everyone. She studied at the Colorado School of Traditional
+                Chinese Medicine where she received her Masters of Science in Acupuncture. She
+                has passed all national board exams, earning her diplomate of acupuncture from
+                NCCAOM and acupuncture license. Today she continues her studies through the
+                Colorado School of Traditional Chinese Medicine where she is earning a secondary
+                Masters in Chinese Herbal Medicine. She finds she’s most passionate about treating
+                mental health, gynecological health, and chronic pain. She has also taken specialty
+                courses in both musculoskeletal disorders as well as gynecology. Sarah is very
+                excited to help people on their journey to find the relief and healing she has
+                also discovered for herself with this powderful medicine.
+              </Typography>
+            </Grid>
+            <Grid item sm={4} xs={12} className={classes.image}>
+              <img src={sarah} className={classes.sarahImg} alt="sarah" />
             </Grid>
           </Grid>
         </Grid>
