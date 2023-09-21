@@ -76,13 +76,7 @@ function Location(props) {
             </Grid>
             <Grid item xs={12}>
               <Typography variant="body2" className={classes.buildingLocation}>
-                {'Our office is on the 3rd floor located in the '}
-                <LinkedText
-                  link={ALT_FAM_LINK}
-                  text="Alternative Family Medicine and Chiropractic"
-                  newPage
-                />
-                {' business suite.'}
+                {'Our office is on the 4th floor, northeast corner'}
               </Typography>
             </Grid>
             <Grid item xs={12} className={classes.appointmentButton}>

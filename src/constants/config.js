@@ -1,6 +1,6 @@
 // Bristlecone Info
 export const PHONE_NUMBER = '720.722.2186';
-export const ADDRESS = '4704 N Harlan St. #340 Denver CO, 80212';
+export const ADDRESS = '4704 N Harlan St. #410 Denver CO, 80212';
 export const EMAIL = 'info@bristleconewellness.com';
 
 // Map Links
